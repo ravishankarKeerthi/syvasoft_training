@@ -1,0 +1,62 @@
+{
+  "doctype": "DocType",
+  "name": "Learning Path",
+  "module": "SyvaSoft Training",
+  "custom": 1,
+  "autoname": "field:title",
+  "fields": [
+    {
+      "fieldtype": "Data",
+      "fieldname": "title",
+      "label": "Title",
+      "reqd": 1
+    },
+    {
+      "fieldtype": "Select",
+      "fieldname": "audience",
+      "label": "Audience",
+      "options": "Internal Employees\nExternal Students\nBoth"
+    },
+    {
+      "fieldtype": "Text Editor",
+      "fieldname": "description",
+      "label": "Description"
+    },
+    {
+      "fieldtype": "Check",
+      "fieldname": "published",
+      "label": "Published"
+    },
+    {
+      "fieldtype": "Table MultiSelect",
+      "fieldname": "courses",
+      "label": "Courses",
+      "options": "Learning Path Course"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Academy Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Instructor",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Student",
+      "read": 1
+    }
+  ]
+}

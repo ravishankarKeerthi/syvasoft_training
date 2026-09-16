@@ -1,0 +1,50 @@
+{
+  "doctype": "DocType",
+  "name": "Learning Path Course",
+  "module": "SyvaSoft Training",
+  "custom": 1,
+  "autoname": "field:title",
+  "fields": [
+    {
+      "fieldtype": "Link",
+      "fieldname": "course",
+      "label": "Course",
+      "options": "Training Course"
+    },
+    {
+      "fieldtype": "Int",
+      "fieldname": "sequence",
+      "label": "Sequence"
+    },
+    {
+      "fieldtype": "Check",
+      "fieldname": "mandatory",
+      "label": "Mandatory"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Academy Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Instructor",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Student",
+      "read": 1
+    }
+  ]
+}

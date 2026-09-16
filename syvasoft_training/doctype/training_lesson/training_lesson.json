@@ -1,0 +1,89 @@
+{
+  "doctype": "DocType",
+  "name": "Training Lesson",
+  "module": "SyvaSoft Training",
+  "custom": 1,
+  "autoname": "field:title",
+  "fields": [
+    {
+      "fieldtype": "Link",
+      "fieldname": "course",
+      "label": "Course",
+      "options": "Training Course",
+      "reqd": 1
+    },
+    {
+      "fieldtype": "Link",
+      "fieldname": "chapter",
+      "label": "Chapter",
+      "options": "Training Chapter"
+    },
+    {
+      "fieldtype": "Data",
+      "fieldname": "title",
+      "label": "Title",
+      "reqd": 1
+    },
+    {
+      "fieldtype": "Int",
+      "fieldname": "sequence",
+      "label": "Sequence"
+    },
+    {
+      "fieldtype": "Select",
+      "fieldname": "content_type",
+      "label": "Content Type",
+      "options": "Video\nArticle\nPDF\nLive Class\nPractical"
+    },
+    {
+      "fieldtype": "Text Editor",
+      "fieldname": "content",
+      "label": "Content"
+    },
+    {
+      "fieldtype": "Attach",
+      "fieldname": "resource",
+      "label": "Resource"
+    },
+    {
+      "fieldtype": "Int",
+      "fieldname": "duration_minutes",
+      "label": "Duration Minutes"
+    },
+    {
+      "fieldtype": "Check",
+      "fieldname": "is_preview",
+      "label": "Free Preview"
+    },
+    {
+      "fieldtype": "Check",
+      "fieldname": "required",
+      "label": "Required"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Academy Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Instructor",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Student",
+      "read": 1
+    }
+  ]
+}

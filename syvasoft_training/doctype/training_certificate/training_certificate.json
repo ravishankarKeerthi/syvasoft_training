@@ -1,0 +1,78 @@
+{
+  "doctype": "DocType",
+  "name": "Training Certificate",
+  "module": "SyvaSoft Training",
+  "custom": 1,
+  "autoname": "naming_series:CERT-.#####",
+  "fields": [
+    {
+      "fieldtype": "Data",
+      "fieldname": "certificate_number",
+      "label": "Certificate Number",
+      "reqd": 1
+    },
+    {
+      "fieldtype": "Link",
+      "fieldname": "learner",
+      "label": "Learner",
+      "options": "User"
+    },
+    {
+      "fieldtype": "Link",
+      "fieldname": "course",
+      "label": "Course",
+      "options": "Training Course"
+    },
+    {
+      "fieldtype": "Date",
+      "fieldname": "issue_date",
+      "label": "Issue Date"
+    },
+    {
+      "fieldtype": "Date",
+      "fieldname": "expiry_date",
+      "label": "Expiry Date"
+    },
+    {
+      "fieldtype": "Select",
+      "fieldname": "status",
+      "label": "Status",
+      "options": "Issued\nRevoked"
+    },
+    {
+      "fieldtype": "Attach",
+      "fieldname": "certificate_file",
+      "label": "Certificate File"
+    },
+    {
+      "fieldtype": "Data",
+      "fieldname": "verification_code",
+      "label": "Verification Code"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Academy Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Instructor",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Student",
+      "read": 1
+    }
+  ]
+}

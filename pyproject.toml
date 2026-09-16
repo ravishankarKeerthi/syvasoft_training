@@ -1,0 +1,5 @@
+[project]
+name="syvasoft_training"
+version="1.0.0"
+description="SyvaSoft Training Academy for Frappe"
+requires-python=">=3.10"

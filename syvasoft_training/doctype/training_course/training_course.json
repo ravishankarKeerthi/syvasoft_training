@@ -1,0 +1,103 @@
+{
+  "doctype": "DocType",
+  "name": "Training Course",
+  "module": "SyvaSoft Training",
+  "custom": 1,
+  "autoname": "field:title",
+  "fields": [
+    {
+      "fieldtype": "Data",
+      "fieldname": "title",
+      "label": "Title",
+      "reqd": 1
+    },
+    {
+      "fieldtype": "Select",
+      "fieldname": "category",
+      "label": "Category",
+      "options": "Foundation\nFunctional\nTechnical\nImplementation\nIndustry\nProfessional Skills"
+    },
+    {
+      "fieldtype": "Select",
+      "fieldname": "level",
+      "label": "Level",
+      "options": "Beginner\nIntermediate\nAdvanced"
+    },
+    {
+      "fieldtype": "Small Text",
+      "fieldname": "short_description",
+      "label": "Short Description"
+    },
+    {
+      "fieldtype": "Text Editor",
+      "fieldname": "description",
+      "label": "Description"
+    },
+    {
+      "fieldtype": "Check",
+      "fieldname": "published",
+      "label": "Published"
+    },
+    {
+      "fieldtype": "Check",
+      "fieldname": "is_paid",
+      "label": "Paid Course"
+    },
+    {
+      "fieldtype": "Currency",
+      "fieldname": "price",
+      "label": "Price"
+    },
+    {
+      "fieldtype": "Link",
+      "fieldname": "currency",
+      "label": "Currency",
+      "options": "Currency"
+    },
+    {
+      "fieldtype": "Float",
+      "fieldname": "duration_hours",
+      "label": "Duration Hours"
+    },
+    {
+      "fieldtype": "Check",
+      "fieldname": "certificate_enabled",
+      "label": "Certificate Enabled"
+    },
+    {
+      "fieldtype": "Attach Image",
+      "fieldname": "thumbnail",
+      "label": "Thumbnail"
+    },
+    {
+      "fieldtype": "Data",
+      "fieldname": "instructor",
+      "label": "Instructor"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Academy Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Instructor",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Student",
+      "read": 1
+    }
+  ]
+}

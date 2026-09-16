@@ -1,0 +1,72 @@
+{
+  "doctype": "DocType",
+  "name": "Training Submission",
+  "module": "SyvaSoft Training",
+  "custom": 1,
+  "autoname": "naming_series:TRAIN-SUB-.#####",
+  "fields": [
+    {
+      "fieldtype": "Link",
+      "fieldname": "assignment",
+      "label": "Assignment",
+      "options": "Practical Assignment"
+    },
+    {
+      "fieldtype": "Link",
+      "fieldname": "learner",
+      "label": "Learner",
+      "options": "User"
+    },
+    {
+      "fieldtype": "Attach",
+      "fieldname": "evidence",
+      "label": "Evidence"
+    },
+    {
+      "fieldtype": "Text Editor",
+      "fieldname": "response",
+      "label": "Response"
+    },
+    {
+      "fieldtype": "Select",
+      "fieldname": "status",
+      "label": "Status",
+      "options": "Submitted\nUnder Review\nApproved\nNeeds Revision"
+    },
+    {
+      "fieldtype": "Float",
+      "fieldname": "score",
+      "label": "Score"
+    },
+    {
+      "fieldtype": "Text Editor",
+      "fieldname": "trainer_feedback",
+      "label": "Trainer Feedback"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Academy Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Instructor",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Student",
+      "read": 1
+    }
+  ]
+}

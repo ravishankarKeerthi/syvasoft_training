@@ -1,0 +1,75 @@
+{
+  "doctype": "DocType",
+  "name": "Training Enrollment",
+  "module": "SyvaSoft Training",
+  "custom": 1,
+  "autoname": "naming_series:TRAIN-ENR-.#####",
+  "fields": [
+    {
+      "fieldtype": "Link",
+      "fieldname": "course",
+      "label": "Course",
+      "options": "Training Course",
+      "reqd": 1
+    },
+    {
+      "fieldtype": "Link",
+      "fieldname": "learner",
+      "label": "Learner",
+      "options": "User",
+      "reqd": 1
+    },
+    {
+      "fieldtype": "Select",
+      "fieldname": "status",
+      "label": "Status",
+      "options": "Enrolled\nIn Progress\nCompleted\nSuspended"
+    },
+    {
+      "fieldtype": "Date",
+      "fieldname": "enrollment_date",
+      "label": "Enrollment Date"
+    },
+    {
+      "fieldtype": "Float",
+      "fieldname": "progress_percent",
+      "label": "Progress Percent"
+    },
+    {
+      "fieldtype": "Date",
+      "fieldname": "completion_date",
+      "label": "Completion Date"
+    },
+    {
+      "fieldtype": "Link",
+      "fieldname": "certificate",
+      "label": "Certificate",
+      "options": "Training Certificate"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Academy Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Instructor",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Student",
+      "read": 1
+    }
+  ]
+}

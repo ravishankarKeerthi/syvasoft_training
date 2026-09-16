@@ -1,0 +1,77 @@
+{
+  "doctype": "DocType",
+  "name": "Practical Assignment",
+  "module": "SyvaSoft Training",
+  "custom": 1,
+  "autoname": "field:title",
+  "fields": [
+    {
+      "fieldtype": "Data",
+      "fieldname": "title",
+      "label": "Title",
+      "reqd": 1
+    },
+    {
+      "fieldtype": "Link",
+      "fieldname": "course",
+      "label": "Course",
+      "options": "Training Course"
+    },
+    {
+      "fieldtype": "Link",
+      "fieldname": "lesson",
+      "label": "Lesson",
+      "options": "Training Lesson"
+    },
+    {
+      "fieldtype": "Text Editor",
+      "fieldname": "scenario",
+      "label": "Business Scenario"
+    },
+    {
+      "fieldtype": "Text Editor",
+      "fieldname": "instructions",
+      "label": "Instructions"
+    },
+    {
+      "fieldtype": "Int",
+      "fieldname": "max_score",
+      "label": "Maximum Score"
+    },
+    {
+      "fieldtype": "Date",
+      "fieldname": "due_date",
+      "label": "Due Date"
+    },
+    {
+      "fieldtype": "Check",
+      "fieldname": "published",
+      "label": "Published"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Academy Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Instructor",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Student",
+      "read": 1
+    }
+  ]
+}

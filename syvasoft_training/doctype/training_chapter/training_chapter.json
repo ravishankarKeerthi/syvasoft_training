@@ -1,0 +1,57 @@
+{
+  "doctype": "DocType",
+  "name": "Training Chapter",
+  "module": "SyvaSoft Training",
+  "custom": 1,
+  "autoname": "field:title",
+  "fields": [
+    {
+      "fieldtype": "Link",
+      "fieldname": "course",
+      "label": "Course",
+      "options": "Training Course",
+      "reqd": 1
+    },
+    {
+      "fieldtype": "Data",
+      "fieldname": "title",
+      "label": "Title",
+      "reqd": 1
+    },
+    {
+      "fieldtype": "Int",
+      "fieldname": "sequence",
+      "label": "Sequence"
+    },
+    {
+      "fieldtype": "Text",
+      "fieldname": "description",
+      "label": "Description"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Academy Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Instructor",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Student",
+      "read": 1
+    }
+  ]
+}

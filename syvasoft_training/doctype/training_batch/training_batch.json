@@ -1,0 +1,77 @@
+{
+  "doctype": "DocType",
+  "name": "Training Batch",
+  "module": "SyvaSoft Training",
+  "custom": 1,
+  "autoname": "field:title",
+  "fields": [
+    {
+      "fieldtype": "Data",
+      "fieldname": "title",
+      "label": "Title",
+      "reqd": 1
+    },
+    {
+      "fieldtype": "Link",
+      "fieldname": "course",
+      "label": "Course",
+      "options": "Training Course"
+    },
+    {
+      "fieldtype": "Date",
+      "fieldname": "start_date",
+      "label": "Start Date"
+    },
+    {
+      "fieldtype": "Date",
+      "fieldname": "end_date",
+      "label": "End Date"
+    },
+    {
+      "fieldtype": "Select",
+      "fieldname": "mode",
+      "label": "Mode",
+      "options": "Self Paced\nLive Online\nClassroom"
+    },
+    {
+      "fieldtype": "Data",
+      "fieldname": "instructor",
+      "label": "Instructor"
+    },
+    {
+      "fieldtype": "Int",
+      "fieldname": "capacity",
+      "label": "Capacity"
+    },
+    {
+      "fieldtype": "Check",
+      "fieldname": "active",
+      "label": "Active"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Academy Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Instructor",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Student",
+      "read": 1
+    }
+  ]
+}
